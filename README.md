@@ -20,31 +20,7 @@ WaiterApp is composed of three applications that communicate through a RESTful A
 
 The goal of the system is to simulate a real production environment and demonstrate practical full-stack development patterns.
 
----
-
-## Tech Stack
-
-**Backend**
-- Node.js  
-- Express  
-- TypeScript  
-- MongoDB  
-- Mongoose  
-- Multer  
-
-**Web**
-- React  
-- TypeScript  
-- Vite  
-- styled-components  
-
-**Mobile**
-- React Native  
-- Expo  
-- Axios  
-
-**Design**
-- Figma  
+<img width="1344" height="768" alt="mobilewaiter" src="https://github.com/user-attachments/assets/1652e904-1736-4b38-b8c2-11aa7e02a47a" />
 
 ---
 
@@ -87,6 +63,32 @@ It allows:
 - Managing active orders  
 
 The app communicates with the API using Axios and includes loading states and filtering for a smooth workflow.
+
+---
+
+## Tech Stack
+
+**Backend**
+- Node.js  
+- Express  
+- TypeScript  
+- MongoDB  
+- Mongoose  
+- Multer  
+
+**Web**
+- React  
+- TypeScript  
+- Vite  
+- styled-components  
+
+**Mobile**
+- React Native  
+- Expo  
+- Axios  
+
+**Design**
+- Figma  
 
 ---
 
