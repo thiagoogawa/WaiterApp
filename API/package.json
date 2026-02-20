@@ -5,13 +5,13 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-  "dev": "tsx watch src/index.ts",
-  "build": "tsc"
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
+    "@eslint/js": "^9.39.3",
     "@types/express": "^5.0.6",
-    "eslint": "^10.0.0",
+    "eslint": "^9.39.3",
     "globals": "^17.3.0",
     "nodemon": "^3.1.11",
     "ts-node": "^10.9.2",
