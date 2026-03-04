@@ -11,6 +11,7 @@ const __dirname = path.dirname(__filename);
 import { createCategory } from './useCases/categories/createCategory.js';
 import { listProducts } from './useCases/products/listProducts.js';
 import { createProducts } from './useCases/products/createProducts.js';
+import { listProductsByCategory } from './useCases/categories/listProductsByCategory.js';
 
 export const router = Router();
 
@@ -38,9 +39,7 @@ router.get('/products', listProducts);
 router.post('/products', upload.single('image'), createProducts);
 
 // Get products by category
-router.get('/categories/:categoryId/products', (req, res) => {
-  res.send('OK');
-});
+router.get('/categories/:categoryId/products', listProductsByCategory);
 
 // List orders
 router.get('/orders', (req, res) => {
