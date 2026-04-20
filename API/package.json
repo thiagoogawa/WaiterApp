@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node dist/app/index.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.3",
