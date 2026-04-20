@@ -14,6 +14,7 @@ import { createProducts } from './useCases/products/createProducts.js';
 import { listProductsByCategory } from './useCases/categories/listProductsByCategory.js';
 import { listOrders } from './useCases/orders/listOrders.js';
 import { createOrder } from './useCases/orders/createOrder.js';
+import { changeOrderStatus } from './useCases/orders/changeOrderStatus.js';
 
 export const router = Router();
 
@@ -50,9 +51,7 @@ router.get('/orders', listOrders);
 router.post('/orders', createOrder);
 
 // Change order status
-router.patch('/orders/:orderId', (req, res) => {
-  res.send('OK');
-});
+router.patch('/orders/:orderId', changeOrderStatus);
 
 // Delete/cancel order
 router.delete('/orders/:orderId', (req, res) => {
