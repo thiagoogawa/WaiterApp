@@ -13,6 +13,7 @@ import { listProducts } from './useCases/products/listProducts.js';
 import { createProducts } from './useCases/products/createProducts.js';
 import { listProductsByCategory } from './useCases/categories/listProductsByCategory.js';
 import { listOrders } from './useCases/orders/listOrders.js';
+import { createOrder } from './useCases/orders/createOrder.js';
 
 export const router = Router();
 
@@ -46,9 +47,7 @@ router.get('/categories/:categoryId/products', listProductsByCategory);
 router.get('/orders', listOrders);
 
 // Create order
-router.post('/orders', (req, res) => {
-  res.send('OK');
-});
+router.post('/orders', createOrder);
 
 // Change order status
 router.patch('/orders/:orderId', (req, res) => {
