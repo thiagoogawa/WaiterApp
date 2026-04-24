@@ -1,4 +1,5 @@
 import js from '@eslint/js'
+import stylistic from '@stylistic/eslint-plugin'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
@@ -9,6 +10,9 @@ export default defineConfig([
   globalIgnores(['dist']),
   {
     files: ['**/*.{ts,tsx}'],
+    plugins: {
+      '@stylistic': stylistic,
+    },
     extends: [
       js.configs.recommended,
       tseslint.configs.recommended,
@@ -18,6 +22,9 @@ export default defineConfig([
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
+    },
+    rules: {
+      '@stylistic/indent': ['error', 2],
     },
   },
 ])
